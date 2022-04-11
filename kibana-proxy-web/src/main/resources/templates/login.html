@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Sign in</title>
+    <link rel="stylesheet" type="text/css"href="css/index.css"/>
+    <link rel="stylesheet" type="text/css"href="css/iconfont.css"/>
+</head>
+<body background="img/bg2.webp">
+    <div id="login-box">
+        <h1>Please Login</h1>
+
+        <form method="post" th:action="@{/authenticate}">
+
+            <div>
+                <span style="color: red" th:text="${error}"></span>
+                <br/>
+            </div>
+
+            <div class="input-box">
+                <i class="iconfont">&#xe609;</i>
+
+                <input type="text" name="username" placeholder="username" required="" autofocus="">
+            </div>
+            <div class="input-box">
+                <i class="iconfont">&#xe605;</i>
+                <input type="password" name="password" placeholder="password" required="">
+            </div>
+            <button type="submit">Sign in</button>
+        </form>
+    </div>
+</body>
+</html>

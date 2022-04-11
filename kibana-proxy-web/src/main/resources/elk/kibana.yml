@@ -1,0 +1,7 @@
+﻿#部署主机和端口
+server.host: "localhost"
+server.port: 5601
+#权限认证
+elasticsearch.username: "kibana"
+elasticsearch.password: "123456"
+

@@ -1,0 +1,13 @@
+﻿#集群配置
+cluster.name: my-application
+node.name: node-1
+node.attr.rack: r1
+#输出配置
+path.data: /home/ferron/Work/ELK/elasticsearch-7.10.0/data
+path.logs: /home/ferron/Work/ELK/elasticsearch-7.10.0/logs
+#端口号
+http.port: 9200
+#开启权限认证模块
+xpack.security.enabled: true
+
+

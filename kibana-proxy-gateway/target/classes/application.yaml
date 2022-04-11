@@ -1,0 +1,9 @@
+server:
+  port: 9001
+
+gatewayconfig:
+  proxyKibana: http://localhost:5601
+  cookieKey: ada64fa45
+  accountList:
+    - username: elastic
+      password: ZWxhc3RpYzoxMjM0NTY=

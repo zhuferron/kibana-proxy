@@ -1,0 +1,22 @@
+server:
+  port: 9000
+
+
+webconfig:
+  proxyHost: localhost
+  ldap:
+    url: xxxxx
+    password: xxxxxx
+    key: dfhkahf
+    authentication: simple
+    protocal: ssl
+    user: xxxxx
+    initialContextFactory: com.sun.jndi.ldap.LdapCtxFactory
+    searchBase: "xxxxxx"
+  cookieConfig:
+    maxAge: 1
+    isSecure: true
+    encryptKey: ada64fa45
+  mappingList:
+    - accountUsername: elastic
+      group: admin
